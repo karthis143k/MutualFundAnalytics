@@ -18,19 +18,17 @@ files = {
 
 for file, table in files.items():
 
-    df = pd.read_csv(
-        f"data/processed/{file}"
+    csv_rows = len(
+        pd.read_csv(f"data/processed/{file}")
     )
 
-    df.to_sql(
-        table,
-        engine,
-        if_exists="replace",
-        index=False
-    )
+    db_rows = pd.read_sql(
+        f"SELECT COUNT(*) as cnt FROM {table}",
+        engine
+    ).iloc[0]["cnt"]
 
     print(
-        f"{table} loaded : {len(df)} rows"
+        f"{table}: CSV={csv_rows} | DB={db_rows}"
     )
 
-print("\nAll datasets loaded into SQLite successfully.")
+print("\nRow Count Verification Complete")
