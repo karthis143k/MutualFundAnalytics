@@ -1,0 +1,19 @@
+DAY 1 DATA QUALITY SUMMARY
+
+Files Checked:
+1. HDFC Top 100
+2. SBI Bluechip
+3. ICICI Bluechip
+4. Nippon Large Cap
+5. Axis Bluechip
+6. Kotak Bluechip
+
+Observations:
+- No missing values found
+- No duplicate rows found
+- Date column available
+- NAV column available
+- Data successfully ingested from MFAPI
+
+Conclusion:
+Dataset is suitable for further analysis.
