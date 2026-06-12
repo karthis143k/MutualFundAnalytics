@@ -190,3 +190,10 @@ bluestock_mf_dashboard.pbix
 Conclusion
 
 The Mutual Fund Analytics Platform successfully combines data engineering, financial analytics, risk modeling, and business intelligence into a unified solution. The project provides actionable insights for investors, analysts, and fund managers through advanced analytics and interactive dashboards.
+
+
+Bonus Analytics
+- Markowitz Efficient Frontier Portfolio Optimization
+- Monte Carlo Simulation for 5-Year NAV Forecasting
+- Optimal Portfolio Allocation Analysis
+- Risk-Return Trade-off Evaluation
